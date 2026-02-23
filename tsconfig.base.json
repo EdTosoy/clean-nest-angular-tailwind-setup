@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@wegrowupupup/datatypes": ["packages/shared/datatypes/src/index.ts"]
+      "@wegrowupupup/datatypes": ["packages/shared/datatypes/src/index.ts"],
+      "@wegrowupupup/data-access": ["packages/client/data-access/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,13 +1,13 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { NxWelcome } from './nx-welcome';
+import { DataAccessService } from '@wegrowupupup/data-access';
+import { Component, inject } from '@angular/core';
 
 @Component({
-  imports: [NxWelcome, RouterModule],
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
 export class App {
   protected title = 'web';
+  protected dataAccessService = inject(DataAccessService);
+  protected userResource = this.dataAccessService.userResource;
 }
