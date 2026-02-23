@@ -88,6 +88,8 @@ Import Tailwind in `apps/web/src/styles.css`:
 
 ## Data Access Library Example
 
+## * NOTE * in this example I use 'wegrowupupup' as my project-name please open your 'tsconfig.base.json' for path reference.
+
 ### InjectionToken
 
 ```ts
