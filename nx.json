@@ -21,18 +21,8 @@
         "serveStaticTargetName": "serve-static"
       }
     },
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "lint"
-      }
-    },
-    {
-      "plugin": "@nx/playwright/plugin",
-      "options": {
-        "targetName": "e2e"
-      }
-    }
+    { "plugin": "@nx/eslint/plugin", "options": { "targetName": "lint" } },
+    { "plugin": "@nx/playwright/plugin", "options": { "targetName": "e2e" } }
   ],
   "targetDefaults": {
     "@angular/build:application": {
@@ -52,12 +42,8 @@
       "style": "css",
       "unitTestRunner": "vitest-angular"
     },
-    "@nx/angular:library": {
-      "linter": "eslint",
-      "unitTestRunner": "none"
-    },
-    "@nx/angular:component": {
-      "style": "css"
-    }
-  }
+    "@nx/angular:library": { "linter": "eslint", "unitTestRunner": "none" },
+    "@nx/angular:component": { "style": "css" }
+  },
+  "nxCloudId": "699c17ef95f07395676e38d7"
 }
